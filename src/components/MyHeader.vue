@@ -6,6 +6,7 @@
         </h1>
 
     <UpperHeader/>
+    <LowerHeader />
 
     </header>
   </div>
@@ -13,11 +14,14 @@
 
 <script>
 import UpperHeader from "./partials/UpperHeader.vue" 
+import LowerHeader from "./partials/LowerHeader.vue" 
+
 
 export default {
   name: "MyHeader",
   components:{
     UpperHeader,
+    LowerHeader,
   }
 };
 </script>
