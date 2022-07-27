@@ -1,11 +1,9 @@
 <template>
   <div>
     <Main>
-        <h1>
-            My Main
-        </h1>
         <BrowseByCategory />
         <NewArrivals />
+        <TestimonialsNewsLetter />
     </Main>
   </div>
 </template>
@@ -13,6 +11,8 @@
 <script>
 import BrowseByCategory from "./partials/PartialsMain/BrowseByCategory.vue" 
 import NewArrivals from "./partials/PartialsMain/NewArrivals.vue" 
+import TestimonialsNewsLetter from "./partials/PartialsMain/TestimonialsNewsLetter.vue" 
+
 
 
 
@@ -20,7 +20,8 @@ export default {
   name: "MyMain",
   components:{
     BrowseByCategory,
-    NewArrivals
+    NewArrivals,
+    TestimonialsNewsLetter
   }
 };
 </script>

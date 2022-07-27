@@ -1,7 +1,7 @@
 <template>
   <div>
     <!-- container with title -->
-    <div class="container">
+    <div class="container mt-5">
       <div class="row">
         <div class="col text-center">
           <h1>Browse By Category</h1>
