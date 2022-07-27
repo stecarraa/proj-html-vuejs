@@ -52,7 +52,7 @@ export default {
 
 .ms-container{
     margin: 0 auto;
-    width: 30%;
+    width: 45%;
     padding: 2rem;
 }
 </style>

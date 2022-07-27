@@ -1,12 +1,10 @@
 <template>
   <div>
     <header>
-        <h1>
-            My Header
-        </h1>
-
+       
     <UpperHeader/>
     <LowerHeader />
+    <MyJumbotron/>
 
     </header>
   </div>
@@ -15,6 +13,8 @@
 <script>
 import UpperHeader from "./partials/UpperHeader.vue" 
 import LowerHeader from "./partials/LowerHeader.vue" 
+import MyJumbotron from "./partials/MyJumbotron.vue" 
+
 
 
 export default {
@@ -22,6 +22,7 @@ export default {
   components:{
     UpperHeader,
     LowerHeader,
+    MyJumbotron
   }
 };
 </script>
