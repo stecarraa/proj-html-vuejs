@@ -1,7 +1,6 @@
 <template>
   <div>
     <header>
-       
     <UpperHeader/>
     <LowerHeader />
     <MyJumbotron/>
@@ -11,9 +10,9 @@
 </template>
 
 <script>
-import UpperHeader from "./partials/UpperHeader.vue" 
-import LowerHeader from "./partials/LowerHeader.vue" 
-import MyJumbotron from "./partials/MyJumbotron.vue" 
+import UpperHeader from "./partials/PartialsHeader/UpperHeader.vue" 
+import LowerHeader from "./partials/PartialsHeader/LowerHeader.vue" 
+import MyJumbotron from "./partials/PartialsHeader/MyJumbotron.vue" 
 
 
 

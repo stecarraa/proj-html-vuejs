@@ -4,7 +4,7 @@
       <div class="row">
         <div class="col-12 d-flex align-items-center">
           <div class="col-3 d d-flex align-items-center">
-            <img src="../../assets/images/logo-symbol.png" alt="" />
+            <img src="../../../assets/images/logo-symbol.png" alt="" />
             <div>Avada Pet Supplies</div>
           </div>
           <div class="col-3">
@@ -33,7 +33,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "../../assets/Style-scss/variables.scss";
+@import "../../../assets/Style-scss/variables.scss";
 
 img {
   height: 40px;

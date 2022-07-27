@@ -17,7 +17,7 @@
           </div>
         <div class="row">
             <div class="col-12">
-                <img class="opacity-75 position-relative" src="../../assets/images/banner-5-2x-scaled.jpg" alt="">
+                <img class="opacity-75 position-relative" src="../../../assets/images/banner-5-2x-scaled.jpg" alt="">
                 <div class="container  jumbo-text">
                     <div class="row">
                         <div class="col text-white">
@@ -32,7 +32,7 @@
         <div class="row ">
             <div class="col-12 d-flex align-items-center text-center mt-4">
                 <div class="col-4">
-                    <img class="w-50" src="../../assets/images/food-transparent-5.png" alt="">
+                    <img class="w-50" src="../../../assets/images/food-transparent-5.png" alt="">
                 </div>
                 <div class="col-4 text-white">
                 Get 25$ OFF your first purchase of our homemade pet food
@@ -54,11 +54,11 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "../../assets/Style-scss/variables.scss";
+@import "../../../assets/Style-scss/variables.scss";
 
 
 .ms-container-fluid{
-    background-image: url('../..//assets/images/bg-transparent-3.png');
+    background-image: url('../../../assets/images/bg-transparent-3.png');
     background-color: $colorHeavyMetal;
 img{
     height: 100%;

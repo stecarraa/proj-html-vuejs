@@ -47,7 +47,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "../../assets/Style-scss/variables.scss";
+@import "../../../assets/Style-scss/variables.scss";
 
 
 .ms-container{
