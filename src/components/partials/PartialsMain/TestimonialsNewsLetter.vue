@@ -8,7 +8,7 @@
           </div>
         </div>
 
-        <div class="row p-5 text-center">
+        <div class="row p-1 text-center">
           <div class="col-4 mt-5 text-white">
             <div>
               <img
@@ -21,7 +21,7 @@
                 Molestias possimus assumenda praesentium! Eligendi aspernatur
                 accusamus debitis.
               </p>
-              <p class="text-secondary">Melissa Green, ThemeFusion</p>
+              <p class="text-secondary">Lisa Smith, ThemeFusion</p>
             </div>
           </div>
           <div class="col-4 mt-5 text-white">
@@ -51,7 +51,7 @@
                 Molestias possimus assumenda praesentium! Eligendi aspernatur
                 accusamus debitis.
               </p>
-              <p class="text-secondary">Melissa Green, ThemeFusion</p>
+              <p class="text-secondary">Sam Lewis, ThemeFusion</p>
             </div>
           </div>
         </div>
