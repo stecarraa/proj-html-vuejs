@@ -71,7 +71,7 @@
 
     <!-- container with food-type-card -->
 
-    <div class="container">
+    <div class="container mt-5">
       <div class="row">
         <div class="col d-flex">
           <div class="ms-card m-1 text-center">
@@ -83,7 +83,7 @@
               <div class="card-text">
                <img src="../../../assets/images/food-transparent-16.png" alt="">
               </div>
-              <a href="#" class="btn ms-bg-color-leaf rounded-pill">Shop dry food</a>
+              <a href="#" class="btn ms-bg-color-leaf rounded-pill text-white" @click.prevent="">Shop dry food</a>
             </div>
           </div>
           <div class="ms-card m-1 text-center">
@@ -94,7 +94,7 @@
               <div class="card-text">
                <img src="../../../assets/images/food-transparent-17.png" alt="">
               </div>
-              <a href="#" class="btn ms-bg-color-leaf rounded-pill">Shop moist food</a>
+              <a href="#" class="btn ms-bg-color-leaf rounded-pill text-white" @click.prevent="">Shop moist food</a>
             </div>
           </div>
           <div class="ms-card m-1 text-center">
@@ -105,7 +105,7 @@
               <div class="card-text">
                <img src="../../../assets/images/food-transparent-18.png" alt="">
               </div>
-              <a href="#" class="btn ms-bg-color-leaf rounded-pill">Shop frozen food</a>
+              <a href="#" class="btn ms-bg-color-leaf rounded-pill text-white" @click.prevent="">Shop frozen food</a>
             </div>
           </div>
         </div>
