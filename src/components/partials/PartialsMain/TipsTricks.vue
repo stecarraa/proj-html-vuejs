@@ -4,66 +4,14 @@
         <div class="row text-center">
             <div class="col-12">
                 <h1>Get the best tips & tricks</h1>
-                <h4>recent articles</h4>
+                <h6 class="color-bay-leaf">Recent articles</h6>
             </div>
         </div>
-        <div class="row">
-          <div class="row">
-            <div class="col d-flex">
-              <div>
-                <div class="m-3 text-center">
-                  <img
-                    src="../../../assets/images/blog-1.jpg"
-                    class="card-img-top"
-                    alt=""
-                  />
-                  <div>
-                    <h4 class="card-text mt-3">How to 'loose leash walk' your dog</h4>
-                    <p class="card-text mt-3">April 21st, 2020</p>
-                  </div>
-                </div>
-              </div>
-              <div>
-                <div class="m-3 text-center">
-                  <img
-                    src="../../../assets/images/blog-2.jpg"
-                    class="card-img-top"
-                    alt=""
-                  />
-                  <div>
-                    <h4 class="card-text mt-3">Stop cats from scratching furniture</h4>
-                    <p class="card-text mt-3">April 19th, 2020</p>
-                  </div>
-                </div>
-              </div>
-              <div>
-                <div class="m-3 text-center">
-                  <img
-                    src="../../../assets/images/blog-3.jpg"
-                    class="card-img-top"
-                    alt=""
-                  />
-                  <div>
-                    <h4 class="card-text mt-3">Where to buy best pet food</h4>
-                    <p class="card-text mt-3">April 18th, 2020</p>
-                  </div>
-                </div>
-              </div>
-              <div>
-                <div class="m-3 text-center">
-                  <img
-                    src="../../../assets/images/blog-4.jpg"
-                    class="card-img-top"
-                    alt=""
-                  />
-                  <div>
-                    <h4 class="card-text mt-3">Proper care for your pet toys</h4>
-                    <p class="card-text mt-3">April 17th, 2020</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+        <!-- containers with blog articles -->
+        <div class="row mt-5">
+           <blog class="col-3" v-for="(blog, index) in blogs" :key="index"
+        :blog="blog" 
+        />
         </div>
         <div class="row text-center">
           <div class="col-12">
@@ -118,14 +66,54 @@
 </template>
 
 <script>
+import blog from "../../../components/ArticleCard.vue" 
+
+
 export default {
-    name:'TipsTricks'
+    name:'TipsTricks',
+
+     components:{
+    blog,
+  },
+   data: function () {
+    return {
+      blogs: [
+        {
+          title: "How lo 'loose leash walk' your dog",
+          date: "April 21st, 2020",
+          imgUrl: "blog-1.jpg"
+        },
+        {
+          title: "Stop cats from scratchin furniture",
+          date: "April 20th, 2020",
+          imgUrl: "blog-2.jpg"
+        },
+        {
+          title: "Where to buy the best pet food",
+          date: "April 19th, 2020",
+          original:"$ 35.00",
+          imgUrl: "blog-3.jpg"
+        },
+        {
+          title: "Proper care for your pet toys",
+          date: "April 18th, 2020",
+          imgUrl: "blog-4.jpg"
+        },
+        
+      ],
+    }}
+  
 
 }
 </script>
 
 <style lang="scss" scoped>
 @import "../../../assets/Style-scss/variables.scss";
+
+.color-bay-leaf{
+  color:#77ab82;
+;
+}
 
 .ms-margin-top{
   margin-top: 20rem;

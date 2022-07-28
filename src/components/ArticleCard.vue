@@ -2,14 +2,14 @@
    <div class="card-item">
                 <div class="m-1 text-center">
                   <img 
-                    :src="require(`../assets/images/${item.imgUrl}`)"
+                    :src="require(`../assets/images/${blog.imgUrl}`)"
                     class="card-img-top"
                     alt=""
                   />
 
                   <div>
-                    <p class="mt-3">{{ item.title }}</p>
-                    <p class="mt-3 text-color-bay-leaf"><span class="text-decoration-line-through ">{{item.original}}</span>{{item.price}}</p>
+                    <h2 class="mt-3">{{ blog.title }}</h2>
+                    <p class="mt-3 ">{{blog.date}}</p>
                   </div>
                 </div>
               </div>
@@ -19,7 +19,7 @@
 export default {
 
      props: {
-        item: {
+        blog: {
             type: Object,
             required: true,
         }

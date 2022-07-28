@@ -2,14 +2,13 @@
    <div class="card-item">
                 <div class="m-1 text-center">
                   <img 
-                    :src="require(`../assets/images/${item.imgUrl}`)"
-                    class="card-img-top"
+                    :src="require(`../assets/images/${testimonial.userUrl}`)"
+                    class="rounded-circle"
                     alt=""
                   />
-
                   <div>
-                    <p class="mt-3">{{ item.title }}</p>
-                    <p class="mt-3 text-color-bay-leaf"><span class="text-decoration-line-through ">{{item.original}}</span>{{item.price}}</p>
+                    <p class="mt-3 text-white">{{ testimonial.description }}</p>
+                    <p class="mt-3 text-secondary">{{testimonial.name}}</p>
                   </div>
                 </div>
               </div>
@@ -19,7 +18,7 @@
 export default {
 
      props: {
-        item: {
+        testimonial: {
             type: Object,
             required: true,
         }
@@ -35,6 +34,11 @@ export default {
 .text-color-bay-leaf{
   color: #77ab82;
 
+}
+
+img {
+  height: 8rem;
+  width: 8rem;
 }
 
 

@@ -7,55 +7,15 @@
             <h1>Users testimonials</h1>
           </div>
         </div>
-
-        <div class="row p-1 text-center">
-          <div class="col-4 mt-5 text-white">
-            <div>
-              <img
-                class="rounded-circle mb-3"
-                src="../../../assets/images/avatar-3.jpg"
-                alt=""
-              />
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Molestias possimus assumenda praesentium! Eligendi aspernatur
-                accusamus debitis.
-              </p>
-              <p class="text-secondary">Lisa Smith, ThemeFusion</p>
-            </div>
-          </div>
-          <div class="col-4 mt-5 text-white">
-            <div>
-              <img
-                class="rounded-circle mb-3"
-                src="../../../assets/images/avatar-1.jpg"
-                alt=""
-              />
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Molestias possimus assumenda praesentium! Eligendi aspernatur
-                accusamus debitis.
-              </p>
-              <p class="text-secondary">Melissa Green, ThemeFusion</p>
-            </div>
-          </div>
-          <div class="col-4 mt-5 text-white">
-            <div>
-              <img
-                class="rounded-circle mb-3"
-                src="../../../assets/images/avatar-4.jpg"
-                alt=""
-              />
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Molestias possimus assumenda praesentium! Eligendi aspernatur
-                accusamus debitis.
-              </p>
-              <p class="text-secondary">Sam Lewis, ThemeFusion</p>
-            </div>
-          </div>
-        </div>
+<!-- container with the testimonials -->
+        <div class="row p-1 text-center mt-5">
+           <testimonial class="col-4" v-for="(testimonial, index) in testimonials" :key="index"
+        :testimonial="testimonial" 
+        />
+        </div> 
       </div>
+
+      <!-- container for the news letter section -->
       <div
         class="container position-absolute top-100 start-50 translate-middle">
         <div class="ms-container-news-letter">
@@ -77,8 +37,35 @@
 </template>
 
 <script>
+import testimonial from "../../../components/UserCard.vue"
 export default {
   name: "TestimonialsNewsLetter",
+   components:{
+    testimonial,
+  },
+   data: function () {
+    return {
+      testimonials: [
+        {
+          name: "Lisa Smith, ThemeFusion",
+          description: " Lorem ipsum dolor sit amet consectetur adipisicing elit Molestias possimus assumenda praesentium! Eligendi aspernatu accusamus debitis.",
+          userUrl: "avatar-3.jpg"
+        },
+        {
+          name: "Melissa Green, ThemeFusion",
+          description: "Lorem ipsum dolor sit amet consectetur adipisicing elit Molestias possimus assumenda praesentium! Eligendi aspernatu accusamus debitis.",
+
+          userUrl: "avatar-1.jpg"
+        },
+        {
+          name: "Sam Lewis, ThemeFusion",
+          description: "Lorem ipsum dolor sit amet consectetur adipisicing elit Molestias possimus assumenda praesentium! Eligendi aspernatu accusamus debitis.", 
+
+          userUrl: "avatar-4.jpg"
+        }, 
+      ],
+    }}
+  
 };
 </script>
 
