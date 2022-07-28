@@ -8,90 +8,9 @@
             </div>
         </div>
         <div class="row">
-          <div class="col-4">
-             <div class="m-1 text-center">
-                  <img
-                    src="../../../assets/images/product-8.jpg"
-                    class="card-img-top"
-                    alt=""
-                  />
-                  <div>
-                    <p class="card-text mt-3">Colored pet bed</p>
-                    <p class="card-text mt-3">$25.00</p>
-                  </div>
-                </div>
-              </div>
-
-               <div class="col-4">
-             <div class="m-1 text-center">
-                  <img
-                    src="../../../assets/images/product-2.jpg"
-                    class="card-img-top"
-                    alt=""
-                  />
-                  <div>
-                    <p class="card-text mt-3">Colorful ball set</p>
-                    <p class="card-text mt-3">$25.00</p>
-                  </div>
-                </div>
-              </div>
-
-               <div class="col-4">
-             <div class="m-1 text-center">
-                  <img
-                    src="../../../assets/images/product-3.jpg"
-                    class="card-img-top"
-                    alt=""
-                  />
-                  <div>
-                    <p class="card-text mt-3">Dog bone</p>
-                    <p class="card-text mt-3">$25.00</p>
-                  </div>
-                </div>
-              </div>
-
-               <div class="col-4">
-             <div class="m-1 text-center">
-                  <img
-                    src="../../../assets/images/product-4.jpg"
-                    class="card-img-top"
-                    alt=""
-                  />
-                  <div>
-                    <p class="card-text mt-3">Animal transport bag</p>
-                    <p class="card-text mt-3">$25.00</p>
-                  </div>
-                </div>
-              </div>
-
-               <div class="col-4">
-             <div class="m-1 text-center">
-                  <img
-                    src="../../../assets/images/product-5.jpg"
-                    class="card-img-top"
-                    alt=""
-                  />
-                  <div>
-                    <p class="card-text mt-3">Animal transport cage</p>
-                    <p class="card-text mt-3">$25.00</p>
-                  </div>
-                </div>
-              </div>
-
-               <div class="col-4">
-             <div class="m-1 text-center">
-                  <img
-                    src="../../../assets/images/product-10.jpg"
-                    class="card-img-top"
-                    alt=""
-                  />
-                  <div>
-                    <p class="card-text mt-3">Closable cat litter</p>
-                    <p class="card-text mt-3">$25.00</p>
-                  </div>
-                </div>
-              </div>
-
+<item class="col-4" v-for="(item, index) in items" :key="index"
+        :item="item" 
+        />
               
           </div>
         </div>
@@ -100,8 +19,51 @@
 </template>
 
 <script>
+import item from "../../../components/CardItem.vue"
+
 export default {
-name:'NewProducts'
+name:'NewProducts',
+components:{
+    item,
+  },
+  data: function () {
+    return {
+      items: [
+        {
+          title: "Colored ped bed",
+          price: "$ 18.00 - $ 26.00",
+          imgUrl: "product-8.jpg"
+        },
+        {
+          title: "Colorful ball set",
+          price: "$ 29.00",
+          imgUrl: "product-2.jpg"
+        },
+        {
+          title: "Dog bone",
+          price: "$ 18.00",
+          original:"$ 29.00",
+          imgUrl: "product-3.jpg"
+        },
+        {
+          title: "Animal transport bag",
+          price: "$ 29.00",
+          imgUrl: "product-4.jpg"
+        },
+         {
+          title: "Animal transport cage",
+          price: "$ 35.00",
+          imgUrl: "product-5.jpg"
+        },
+        {
+          title: "Closable cat litter",
+          price: "$ 16.00",
+          imgUrl: "product-10.jpg"
+        },
+        
+      ],
+    }}
+  
 }
 </script>
 

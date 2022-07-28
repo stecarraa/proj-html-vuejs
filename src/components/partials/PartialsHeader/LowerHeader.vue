@@ -2,7 +2,7 @@
   <div class="ms-container">
         <ul class="list-unstyled d-flex justify-content-between">
             <li  v-for="(item, index) in navItems" :key="index">
-                <a class="text-decoration-none text-secondary" :href="item.url">{{item.name}}</a>
+                <a class="text-decoration-none " :href="item.url">{{item.name}}</a>
             </li>
         </ul>
 
@@ -55,4 +55,10 @@ export default {
     width: 45%;
     padding: 2rem;
 }
+
+a{ color: grey;
+   
+}
+
+a:hover{color: black;} 
 </style>

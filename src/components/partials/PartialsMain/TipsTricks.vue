@@ -94,17 +94,21 @@
     </div>
     <div class="ms-container-paw">
      <div class="container">
-       <div class="row p-5 text-white">
-        <div class="col">
+       <div class="row p-5 text-white text-center">
+        <div class="col ">
+          <div class=""><i class="fa-solid fa-truck"></i></div>
           Free worldwide deliveries
         </div>
          <div class="col">
+          <div class=""><i class="fa-regular fa-map"></i></div>
           Free stores near you
         </div>
          <div class="col">
+          <div class=""><i class="fa-solid fa-dollar-sign"></i></div>
           Best price guarranteed
         </div>
          <div class="col">
+          <div class=""><i class="fa-regular fa-credit-card"></i></div>
           All credit card accepted
         </div>
       </div>
@@ -136,5 +140,8 @@ img{
   padding: 4rem;
   
 }
-
+ i{
+  font-size: 3rem;
+  padding: 2rem;
+ }
 </style>

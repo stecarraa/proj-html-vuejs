@@ -4,13 +4,13 @@
           <div class="container w-75">
               <div class="col-12 d-flex justify-content-between p-3">
                 <div class="col-4 text-white">
-                    international shipping services
+                  <i class="fa-regular fa-map"></i>  international shipping services
                 </div>
                  <div class="col-4 text-white">
-                   see our store hours and services
+                  <i class="fa-regular fa-clock"></i> see our store hours and services
                 </div>
                  <div class="col-4 text-white">
-                    we prise the best match to give you the best deals
+                  <i class="fa-solid fa-check"></i>  we prise the best match to give you the best deals
                 </div>
             </div>
         </div>

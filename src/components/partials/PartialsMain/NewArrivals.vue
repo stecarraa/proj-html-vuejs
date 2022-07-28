@@ -39,74 +39,57 @@
           </button>
         </div>
       </div>
-
-      <div class="row">
-        <div class="container">
+<!-- container with new prop item -->
+        <div class="container mt-5">
           <div class="row">
-            <div class="col d-flex">
-              <div>
-                <div class="m-1 text-center">
-                  <img
-                    src="../../../assets/images/product-21.jpg"
-                    class="card-img-top"
-                    alt=""
-                  />
-                  <div>
-                    <p class="card-text mt-3">Transport cage</p>
-                    <p class="card-text mt-3">$25.00</p>
-                  </div>
-                </div>
-              </div>
-              <div>
-                <div class="m-1 text-center">
-                  <img
-                    src="../../../assets/images/product-11.jpg"
-                    class="card-img-top"
-                    alt=""
-                  />
-                  <div>
-                    <p class="card-text mt-3">Dog leash</p>
-                    <p class="card-text mt-3">$25.00</p>
-                  </div>
-                </div>
-              </div>
-              <div>
-                <div class="m-1 text-center">
-                  <img
-                    src="../../../assets/images/product-5.jpg"
-                    class="card-img-top"
-                    alt=""
-                  />
-                  <div>
-                    <p class="card-text mt-3">Animal transport cage</p>
-                    <p class="card-text mt-3"><span class="text-decoration-line-through ">$35.00</span>$25.00</p>
-                  </div>
-                </div>
-              </div>
-              <div>
-                <div class="m-1 text-center">
-                  <img
-                    src="../../../assets/images/product-20.jpg"
-                    class="card-img-top"
-                    alt=""
-                  />
-                  <div>
-                    <p class="card-text mt-3">Colorful cat leash</p>
-                    <p class="card-text mt-3">$12.00</p>
-                  </div>
-                </div>
-              </div>
-            </div>
+              <item class="col-3" v-for="(item, index) in items" :key="index"
+        :item="item" 
+        />
+           
           </div>
         </div>
-      </div>
+     
     </div>
   </div>
 </template>
 
 <script>
+import item from "../../../components/CardItem.vue" 
+
+
 export default {
   name: "NewArrivals",
+  components:{
+    item,
+  },
+   data: function () {
+    return {
+      items: [
+        {
+          title: "Transport cage",
+          price: "$ 25.00",
+          imgUrl: "product-21.jpg"
+        },
+        {
+          title: "Dog leash",
+          price: "$ 25.00",
+          imgUrl: "product-11.jpg"
+        },
+        {
+          title: "Animal transport cage",
+          price: "$ 25.00",
+          original:"$ 35.00",
+          imgUrl: "product-16.jpg"
+        },
+        {
+          title: "colorful cat leash",
+          price: "$ 12.00",
+          imgUrl: "product-20.jpg"
+        },
+        
+      ],
+    }}
+  
 };
 </script>
 
@@ -119,5 +102,7 @@ img {
 }
 
 
+
+
 </style>
->
+
