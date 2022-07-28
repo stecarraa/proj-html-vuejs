@@ -18,6 +18,8 @@
         <div class="row">
             <div class="col-12">
                 <img class="opacity-75 position-relative" src="../../../assets/images/banner-5-2x-scaled.jpg" alt="">
+                <div class="sale-2 text-center"><span class="color-leaf">39$</span> <br> On sale</div>
+                 <div class="sale-1 text-center"><span><i class="fa-solid fa-folder"></i></span> <br> Demos</div>
                 <div class="container  jumbo-text">
                     <div class="row">
                         <div class="col text-white">
@@ -73,6 +75,28 @@ img{
     display: block;
     width: 35%;
 
+}
+.sale-2{
+    position: absolute;
+    top:16rem;
+   
+    right: 2rem;
+    background: white;
+    border-radius: 15%;
+    padding: 0.5rem;
+}
+.sale-1{
+    position: absolute;
+    top:10rem;
+   
+    right: 2rem;
+    background: white;
+    border-radius: 15%;
+    padding: 0.5rem;
+}
+
+.color-leaf{
+    color:#77ab82;
 }
 
 </style>
