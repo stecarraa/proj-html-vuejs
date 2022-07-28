@@ -78,7 +78,7 @@ img{
 }
 .sale-2{
     position: absolute;
-    top:16rem;
+    top:19rem;
    
     right: 2rem;
     background: white;
@@ -87,7 +87,7 @@ img{
 }
 .sale-1{
     position: absolute;
-    top:10rem;
+    top:13rem;
    
     right: 2rem;
     background: white;
