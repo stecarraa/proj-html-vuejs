@@ -27,7 +27,7 @@
     <div class="container">
       <div class="row mt-5">
         <div class="col-12">
-          <h6>All-time best sellers</h6>
+          <h6 class="text-color-bay-leaf">All-time best sellers</h6>
         </div>
       </div>
 
@@ -101,7 +101,9 @@ img {
   margin-top: 10rem;
 }
 
-
+.text-color-bay-leaf {
+  color: #77ab82;
+}
 
 
 </style>

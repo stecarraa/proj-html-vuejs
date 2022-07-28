@@ -1,10 +1,10 @@
 <template>
-  <div>
+  <div class="container-fluid border-bottom">
     <div class="container">
       <div class="row">
         <div class="col-12 d-flex align-items-center">
           <div class="col-3 d d-flex align-items-center">
-            <img src="../../../assets/images/logo-symbol.png" alt="" />
+            <img class="m-3" src="../../../assets/images/logo-symbol.png" alt="" />
             <div>Avada Pet Supplies</div>
           </div>
           <div class="col-3">

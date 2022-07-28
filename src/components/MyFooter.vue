@@ -10,7 +10,7 @@
           />
           <p>
             1234 Avada Avenue Avadaville <br />
-            info@yor-company.com <br />Call us : (1)234 5678
+            info@your-company.com <br />Call us : (1)234 5678
           </p>
         </div>
 
@@ -18,7 +18,7 @@
           <div class="">
             <h3>Shop By Brand</h3>
             <ul class="list-unstyled lh-lg">
-              <li class="" v-for="(item, index) in brandItems" :key="index">
+              <li class="" v-for="(item, index) in brandItems " @click.prevent :key="index">
                 <a class="text-decoration-none text-white" :href="item.url">{{
                   item.name
                 }}</a>
@@ -31,7 +31,7 @@
           <div class="">
             <h3>Useful Links</h3>
             <ul class="list-unstyled lh-lg">
-              <li v-for="(item, index) in linkItems" :key="index">
+              <li v-for="(item, index) in linkItems"  @click.prevent :key="index">
                 <a class="text-decoration-none text-white" :href="item.url">{{
                   item.name
                 }}</a>
@@ -57,7 +57,7 @@
       </div>
       <div class="ms-container">
         <ul class="list-unstyled d-flex justify-content-between">
-          <li v-for="(item, index) in navItems" :key="index">
+          <li v-for="(item, index) in navItems" @click.prevent :key="index">
             <a class="text-decoration-none text-secondary" :href="item.url">{{
               item.name
             }}</a>
